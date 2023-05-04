@@ -12,6 +12,10 @@ tensorflow
 pandas
 torch
 
+seaborn
+stable-baselines3[extra]
+pyglet
+
 
 
 

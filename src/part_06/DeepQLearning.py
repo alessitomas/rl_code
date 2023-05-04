@@ -79,7 +79,7 @@ class DeepQLearning:
                 action = self.select_action(state)
                 next_state, reward, terminal, truncated, _ = self.env.step(action)
                 if terminal or truncated or (steps>self.max_steps):
-                    done = True
+                    done = True          
                 score += reward
                 next_state = np.reshape(next_state, (1, self.env.observation_space.shape[0]))
                 self.experience(state, action, reward, next_state, terminal)
